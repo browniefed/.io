@@ -1,0 +1,39 @@
+body {
+    font-family: Helvetica, Ariral, sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+
+.jamalogo {
+    width: 128px;
+}
+.contact {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.jama-content {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 20px 10px 0;
+    background: #f9f9f9;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0 2px 5px rgba(0,0,0,.1);
+}
+
+.jama-home {
+    background: #FFF;
+    border: none;
+    box-shadow: none;
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+.footer {
+    font-size: .8em;
+}
