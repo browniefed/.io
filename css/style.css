@@ -43,14 +43,15 @@ body {
   max-width: 800px;
   margin: 0 auto;
   width: 100%;
+  padding: 5px;
 }
 
-/* line 37, ../sass/sass/style.scss */
+/* line 38, ../sass/sass/style.scss */
 .footer {
   font-size: .8em;
 }
 
-/* line 41, ../sass/sass/style.scss */
+/* line 42, ../sass/sass/style.scss */
 .code {
   background: #EEE;
   padding: 5px;
