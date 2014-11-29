@@ -30,15 +30,33 @@
                 <h2>Jama Node API - <span class="token release">Released/Active Development</span></h2>
                 <a href="https://github.com/browniefed/JamaNode">Jama Node - Github</a>
                 <p>
-                    This is a simple REST API caller written in JavaScript. Don't let it being called Jama Node fool you, this can be used on the front end as long as you are running Jama REST Passthrough to allow for CORS.
+                    This is a simple REST API caller written in JavaScript. Don't let it being called Jama Node fool you, this can be used on the front end as long as you are running Jama REST Passthrough to allow for CORS. The Jama REST API can be utilized using NPM 
+                </p>
+                <p class="code">
+                    npm install jama-rest-api --save
                 </p>
             </div>
             <div class="jama-passthrough jama-content">
                 <h2>Jama REST Passthrough - <span class="token release">Released/Active Development</span></h2>
                 <a href="https://github.com/browniefed/jamapassthrough">Jama Passthrough - Github</a>
                 <p>
-                    This is a REST Passthrough that allows for CORS (cross origin resource sharing) with the Jama REST API.
+                    This is a REST Passthrough that allows for CORS (cross origin resource sharing) with the Jama REST API. The Jama Passthrough can be utilized using NPM
                 </p>
+                <p class="code">
+                    npm install jama-passthrough --save
+                </p>
+                <pre class="code">
+var JamaPassthrough = require('jama-passthrough');
+var restEndpoint = 'http://localhost:8080/contour/rest/v1'; // YOUR REST API HERE
+var optionalCORS = ['*']; //* for development but in production I recommend limiting to your app host
+
+var JamaAPI = new JamaPassthrough({
+    restEndpoint: restEndpoint,
+    allowedCORS: optionalCORS,
+    port: 9999
+});
+JamaAPI.start();//Listens on Port 9999 unless otherwise specified
+                </pre>
             </div>
             <div class="jama-mobile jama-content">
                 <h2>Jama Universal App - <span class="token development">In Development</span></h2>

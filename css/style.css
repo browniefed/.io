@@ -49,3 +49,10 @@ body {
 .footer {
   font-size: .8em;
 }
+
+/* line 41, ../sass/sass/style.scss */
+.code {
+  background: #EEE;
+  padding: 5px;
+  word-wrap: break-word;
+}
